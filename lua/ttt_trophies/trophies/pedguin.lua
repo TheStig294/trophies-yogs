@@ -10,7 +10,7 @@ function TROPHY:Trigger()
         if not IsPlayer(attacker) or not IsValid(infilctor) then return end
         if attacker.IsSameTeam and attacker:IsSameTeam(ply) then return end
 
-        if infilctor:GetClass() == "prop_physics" and ply:GetModel() == "models/kaesar/buffwinniethepooh/buffwinniethepooh.mdl" then
+        if string.Left(infilctor:GetClass(), 12) == "prop_physics" and ply:GetModel() == "models/kaesar/buffwinniethepooh/buffwinniethepooh.mdl" then
             self:Earn(attacker)
         end
     end)
