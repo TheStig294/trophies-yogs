@@ -1,7 +1,7 @@
 local TROPHY = {}
 TROPHY.id = "duncan"
 TROPHY.title = "Rubber tree survivor"
-TROPHY.desc = "Survive a donconnon from Duncan or as Doncon"
+TROPHY.desc = "Survive a donconnon from Doncon"
 TROPHY.rarity = 2
 
 function TROPHY:Trigger()
@@ -22,7 +22,7 @@ function TROPHY:Trigger()
         local inflictor = dmg:GetInflictor()
         if not IsPlayer(attacker) or not IsValid(inflictor) then return end
 
-        if ent:GetModel() == "models/player/doncon/doncon.mdl" or (inflictor:GetClass() == "doncmk2_en" and attacker:GetModel() == "models/player/doncon/doncon.mdl") then
+        if attacker:GetModel() == "models/player/doncon/doncon.mdl" and (inflictor:GetClass() == "doncmk2_en" or inflictor:GetClass() == "ent_ttt_donconnon_randomat") then
             timer.Simple(2, function()
                 if self:IsAlive(ent) then
                     self:Earn(ent)
