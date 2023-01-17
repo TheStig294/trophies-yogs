@@ -14,7 +14,7 @@ end
 -- Work around for the TTTRandomatCommand hook only accepting added hooks before the randomat base is run (during when autorun files are being loaded)
 if SERVER then
     hook.Add("TTTRandomatCommand", "TTTTrophiesAdminAbuse", function(ply, cmd, args)
-        if ply:GetModel() == "models/bradyjharty/yogscast/lewis.mdl" and cmd == "ttt_randomat_trigger" then
+        if IsPlayer(ply) and ply:GetModel() == "models/bradyjharty/yogscast/lewis.mdl" and cmd == "ttt_randomat_trigger" then
             TROPHY:Trigger(true)
         end
     end)
