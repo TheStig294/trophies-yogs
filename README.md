@@ -85,6 +85,11 @@ Requires:\
 [Yogscast Sharky Player Model](https://steamcommunity.com/sharedfiles/filedetails/?id=2755239782)\
 [Custom Roles for TTT](https://steamcommunity.com/sharedfiles/filedetails/?id=2421039084)
 
+## Duncan's Park Souvenir
+Win as a detective or traitor with an item you've bought the least\
+\
+_trophies_duncanspark_ - Default: 1 - Whether this trophy is enabled
+
 ## Huff this
 Kill Ravs with a fart grenade\
 \
