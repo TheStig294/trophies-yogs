@@ -87,9 +87,9 @@ function TROPHY:Trigger()
                         TTTTrophies.stats[self.id][plyID][item.name] = 0
                     end
 
+                    noOfPurchases = TTTTrophies.stats[self.id][plyID][item.name]
                     TTTTrophies.stats[self.id][plyID]["____TotalPurchases"] = TTTTrophies.stats[self.id][plyID]["____TotalPurchases"] + 1
                     TTTTrophies.stats[self.id][plyID][item.name] = TTTTrophies.stats[self.id][plyID][item.name] + 1
-                    noOfPurchases = TTTTrophies.stats[self.id][plyID][item.name]
                 end
             else
                 -- Active items are indexed by their classname, which this hook passes by itself
@@ -105,34 +105,29 @@ function TROPHY:Trigger()
                     TTTTrophies.stats[self.id][plyID][equipment] = 0
                 end
 
+                noOfPurchases = TTTTrophies.stats[self.id][plyID][equipment]
                 TTTTrophies.stats[self.id][plyID]["____TotalPurchases"] = TTTTrophies.stats[self.id][plyID]["____TotalPurchases"] + 1
                 TTTTrophies.stats[self.id][plyID][equipment] = TTTTrophies.stats[self.id][plyID][equipment] + 1
-                noOfPurchases = TTTTrophies.stats[self.id][plyID][equipment]
             end
 
-            print("No. of purchases:", noOfPurchases)
             local plyStats = table.Copy(TTTTrophies.stats[self.id][plyID])
             -- Don't give out this trophy until at least a sample of 100 purchases have been gathered
-            print("Total purchases:", plyStats.____TotalPurchases)
-            if plyStats.____TotalPurchases < 5 then return end
+            if plyStats.____TotalPurchases < 100 then return end
 
             -- If there's an item bought less than the current one, abort
             for itemName, purchaseCount in pairs(plyStats) do
-                print(itemName, noOfPurchases, purchaseCount, noOfPurchases > purchaseCount)
                 if noOfPurchases > purchaseCount then return end
             end
 
             -- Otherwise, mark the player as potentially able to get the trophy
             ply.TTTTrophiesDuncansParkBoughtLeast = true
-            print("BoughtLeast:", ply.TTTTrophiesDuncansParkBoughtLeast)
+            ply:ChatPrint("[Trophy progress]\nLeast purchased item bought! Win the round as a detective/traitor to earn a trophy!")
         end)
     end)
 
     self:AddHook("TTTEndRound", function(win)
         if win == WIN_TRAITOR then
             for _, ply in ipairs(player.GetAll()) do
-                print(ply:Nick(), ply.TTTTrophiesDuncansParkBoughtLeast)
-
                 if ply.TTTTrophiesDuncansParkBoughtLeast and self:IsAlive(ply) and TTTTrophies:IsTraitorTeam(ply) then
                     self:Earn(ply)
                     ply.TTTTrophiesDuncansParkBoughtLeast = false
@@ -140,8 +135,6 @@ function TROPHY:Trigger()
             end
         elseif win == WIN_INNOCENT then
             for _, ply in ipairs(player.GetAll()) do
-                print(ply:Nick(), ply.TTTTrophiesDuncansParkBoughtLeast)
-
                 if ply.TTTTrophiesDuncansParkBoughtLeast and self:IsAlive(ply) and TTTTrophies:IsGoodDetectiveLike(ply) then
                     self:Earn(ply)
                     ply.TTTTrophiesDuncansParkBoughtLeast = false
