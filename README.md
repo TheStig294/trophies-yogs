@@ -124,3 +124,10 @@ _trophies_duncan_ - Default: 1 - Whether this trophy is enabled\
 Requires:\
 [Doncon Playermodel](https://steamcommunity.com/sharedfiles/filedetails/?id=1440266287)\
 [Donconnon Mark II](https://steamcommunity.com/sharedfiles/filedetails/?id=2237522867)
+
+## "SCOOP IT UP WITH YOUR ******* HANDS!"
+Drop an item near a beggar without them ever picking it up\
+\
+_trophies_scoopitup_ - Default: 1 - Whether this trophy is enabled\
+Requires:\
+[Custom Roles for TTT](https://steamcommunity.com/sharedfiles/filedetails/?id=2421039084)
