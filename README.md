@@ -87,6 +87,7 @@ Requires:\
 
 ## Duncan's Park Souvenir
 Win as a detective or traitor with an item you've bought the least\
+Suggested by /u/Pegussu on Reddit\
 \
 _trophies_duncanspark_ - Default: 1 - Whether this trophy is enabled
 
