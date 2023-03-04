@@ -28,10 +28,10 @@ _ttt_trophies_hide_all_trophies_ - Default: 0\
 Whether trophies have their descriptions hidden while unearned
 
 # Trophies
-Trophies marked as (hidden) do not have their descriptions displayed in-game
+Trophies marked as (Hidden) do not have their descriptions displayed in-game
 
 ## Admin abuse!
-See Lewis manually trigger a randomat\
+(Hidden) See Lewis manually trigger a randomat\
 \
 _trophies_adminabuse_ - Default: 1 - Whether this trophy is enabled\
 Requires:\
