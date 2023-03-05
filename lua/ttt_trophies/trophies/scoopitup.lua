@@ -1,6 +1,6 @@
 local TROPHY = {}
 TROPHY.id = "scoopitup"
-TROPHY.title = "\"SCOOP IT UP WITH YOUR ******* HANDS!\""
+TROPHY.title = "Scoop it up with your ******* hands!"
 TROPHY.desc = "Drop an item near a beggar without them ever picking it up"
 TROPHY.rarity = 2
 
