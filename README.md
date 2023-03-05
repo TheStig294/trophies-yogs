@@ -86,8 +86,8 @@ Requires:\
 [Custom Roles for TTT](https://steamcommunity.com/sharedfiles/filedetails/?id=2421039084)
 
 ## Duncan's Park Souvenir
-Win as a detective or traitor with an item you've bought the least\
 Suggested by /u/Pegussu on Reddit\
+Win as a detective or traitor with an item you've bought the least\
 \
 _trophies_duncanspark_ - Default: 1 - Whether this trophy is enabled
 
@@ -126,6 +126,7 @@ Requires:\
 [Donconnon Mark II](https://steamcommunity.com/sharedfiles/filedetails/?id=2237522867)
 
 ## "SCOOP IT UP WITH YOUR ******* HANDS!"
+Suggested by /u/ram_the_socket\
 Drop an item near a beggar without them ever picking it up\
 \
 _trophies_scoopitup_ - Default: 1 - Whether this trophy is enabled\
