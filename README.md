@@ -99,6 +99,14 @@ Requires:\
 [Solid Snake - P.M. Metal Gear Solid 4](https://steamcommunity.com/sharedfiles/filedetails/?id=614003294)\
 [Fart Grenade](https://steamcommunity.com/sharedfiles/filedetails/?id=948384112)
 
+## It's a 1-shot if it hits you twice!
+Kill Zylus in 1 shot of a boomerang\
+\
+_trophies_boomerang_ - Default: 1 - Whether this trophy is enabled\
+Requires:\
+[Detective Kermit Playermodel](https://steamcommunity.com/sharedfiles/filedetails/?id=1157022429)\
+[[TTT] 100 More Randomats! (Pack 1/4)](https://steamcommunity.com/sharedfiles/filedetails/?id=2428342861)
+
 ## Poon reversal
 See Ben harpoon Lewis\
 \
@@ -125,7 +133,7 @@ Requires:\
 [Doncon Playermodel](https://steamcommunity.com/sharedfiles/filedetails/?id=1440266287)\
 [Donconnon Mark II](https://steamcommunity.com/sharedfiles/filedetails/?id=2237522867)
 
-## "SCOOP IT UP WITH YOUR ******* HANDS!"
+## Scoop it up with your ******* hands!
 Suggested by /u/ram_the_socket\
 Drop an item near a beggar without them ever picking it up\
 \
