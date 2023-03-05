@@ -100,6 +100,7 @@ Requires:\
 [Fart Grenade](https://steamcommunity.com/sharedfiles/filedetails/?id=948384112)
 
 ## It's a 1-shot if it hits you twice!
+Suggested by /u/Stuf404 on Reddit\
 Kill Zylus in 1 shot of a boomerang\
 \
 _trophies_boomerang_ - Default: 1 - Whether this trophy is enabled\
