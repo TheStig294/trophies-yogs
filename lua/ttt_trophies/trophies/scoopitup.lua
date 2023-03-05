@@ -6,13 +6,13 @@ TROPHY.rarity = 2
 
 function TROPHY:Trigger()
     local beggars = {}
-    local droppedWeaponOwners = {}
-    local droppedWeaponPlayers = {}
+    local droppedWeapons = {}
+    local wepNearBeggarPlayers = {}
     local beggarExists = false
 
-    -- Handling tracking of players who are beggars as cheaply as possible, also disables the 1-second timer if no beggars are in the round
+    -- Tracking players who are beggars, also disables the 1-second timer if no beggars are in the round
     self:AddHook("TTTPlayerRoleChanged", function(ply, oldRole, newRole)
-        if newRole then
+        if newRole == ROLE_BEGGAR then
             beggars[ply] = true
             beggarExists = true
         else
@@ -28,54 +28,73 @@ function TROPHY:Trigger()
         end
     end)
 
-    -- This hook doesn't do anything in TTT... need to ask for a drop weapon hook to be added...
-    self:AddHook("PlayerDroppedWeapon", function(ply, wep)
+    self:AddHook("PlayerDroppedWeapon", function(owner, wep)
         -- If weapon isn't buyable or was dropped by a beggar, ignore it
-        if not wep.CanBuy or wep.CanBuy == {} or ply:IsBeggar() then return end
-        droppedWeaponOwners[wep] = ply
+        if not wep.CanBuy or wep.CanBuy == {} or owner:IsBeggar() then return end
+
+        if not droppedWeapons[owner] then
+            droppedWeapons[owner] = {}
+        end
+
+        droppedWeapons[owner][wep] = true
     end)
 
     -- Detect if a beggar is near a dropped weapon
     timer.Create("TTTTrophiesScoopItUp", 1, 0, function()
         if not beggarExists then return end
 
-        for wep, wepOwner in pairs(droppedWeaponOwners) do
-            if not IsValid(wep) then continue end
-            local wepPos = wep:GetPos()
+        for owner, weps in pairs(droppedWeapons) do
+            if not IsValid(owner) then continue end
 
-            for beggar, _ in pairs(beggars) do
-                local beggarPos = beggar:GetPos()
-                local distance = beggarPos:Distance(wepPos)
+            for wep, _ in pairs(weps) do
+                if not IsValid(wep) then continue end
+                local wepPos = wep:GetPos()
 
-                if distance < 100 and IsValid(wepOwner) then
-                    droppedWeaponPlayers[wepOwner] = true
+                for beggar, _ in pairs(beggars) do
+                    local beggarPos = beggar:GetPos()
+                    local distance = beggarPos:Distance(wepPos)
+
+                    if distance < 100 and IsValid(owner) then
+                        wepNearBeggarPlayers[owner] = true
+                    end
                 end
             end
         end
     end)
 
-    -- If a beggar picks up a weapon that was dropped, clear the owner from potentially getting the trophy
+    -- If anyone picks up a weapon that was dropped, clear the owner from potentially getting the trophy
     self:AddHook("WeaponEquip", function(wep, ply)
-        if beggars[ply] then
-            local owner = droppedWeaponOwners[wep]
+        local owner
 
-            if IsValid(owner) then
-                droppedWeaponPlayers[owner] = false
+        for own, weps in pairs(droppedWeapons) do
+            for w, _ in pairs(weps) do
+                if wep == w then
+                    owner = own
+                    break
+                end
+            end
+        end
+
+        if IsValid(owner) then
+            droppedWeapons[owner][wep] = nil
+
+            if table.IsEmpty(droppedWeapons[owner]) then
+                wepNearBeggarPlayers[owner] = false
             end
         end
     end)
 
     -- If the dropped weapon wasn't picked up at all during the round, the owner earns the trophy
     self:AddHook("TTTEndRound", function()
-        for ply, droppedAndNoPickup in pairs(droppedWeaponPlayers) do
+        for ply, droppedAndNoPickup in pairs(wepNearBeggarPlayers) do
             if droppedAndNoPickup then
                 self:Earn(ply)
             end
         end
 
         table.Empty(beggars)
-        table.Empty(droppedWeaponOwners)
-        table.Empty(droppedWeaponPlayers)
+        table.Empty(droppedWeapons)
+        table.Empty(wepNearBeggarPlayers)
         beggarExists = false
     end)
 end
