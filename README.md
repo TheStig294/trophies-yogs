@@ -99,6 +99,12 @@ Requires:\
 [Solid Snake - P.M. Metal Gear Solid 4](https://steamcommunity.com/sharedfiles/filedetails/?id=614003294)\
 [Fart Grenade](https://steamcommunity.com/sharedfiles/filedetails/?id=948384112)
 
+## International Zylus Day!
+Suggested by /u/Stuf404 on Reddit\
+Play within a week of International Zylus Day (June 19)\
+\
+_trophies_zylusday_ - Default: 1 - Whether this trophy is enabled
+
 ## It's a 1-shot if it hits you twice!
 Suggested by /u/Stuf404 on Reddit\
 Kill Zylus in 1 shot of a boomerang\
