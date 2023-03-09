@@ -30,14 +30,6 @@ Whether trophies have their descriptions hidden while unearned
 # Trophies
 Trophies marked as (Hidden) do not have their descriptions displayed in-game
 
-## Admin abuse!
-(Hidden) See Lewis manually trigger a randomat\
-\
-_trophies_adminabuse_ - Default: 1 - Whether this trophy is enabled\
-Requires:\
-[Yogscast Lewis Playermodel](https://steamcommunity.com/sharedfiles/filedetails/?id=2293499171)\
-[Randomat 2.0 for Custom Roles](https://steamcommunity.com/sharedfiles/filedetails/?id=2055805086)
-
 ## A vote for Zylus...
 See Zylus survive a round with the democracy randomat\
 \
@@ -147,3 +139,12 @@ Drop an item near a beggar without them ever picking it up\
 _trophies_scoopitup_ - Default: 1 - Whether this trophy is enabled\
 Requires:\
 [Custom Roles for TTT](https://steamcommunity.com/sharedfiles/filedetails/?id=2421039084)
+
+## Yogscast Guarantee
+(Hidden) See Lewis manually trigger a randomat\
+\
+_trophies_adminabuse_ - Default: 1 - Whether this trophy is enabled\
+Requires:\
+[Yogscast Lewis Playermodel](https://steamcommunity.com/sharedfiles/filedetails/?id=2293499171)\
+[Randomat 2.0 for Custom Roles](https://steamcommunity.com/sharedfiles/filedetails/?id=2055805086)\
+[ULX Module for Randomat 2.0](https://steamcommunity.com/sharedfiles/filedetails/?id=2096758509)

@@ -1,6 +1,6 @@
 local TROPHY = {}
 TROPHY.id = "adminabuse"
-TROPHY.title = "Admin abuse!"
+TROPHY.title = "Yogscast Guarantee"
 TROPHY.desc = "See Lewis manually trigger a randomat"
 TROPHY.rarity = 3
 TROPHY.hidden = true
