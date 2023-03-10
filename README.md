@@ -106,6 +106,14 @@ Requires:\
 [Detective Kermit Playermodel](https://steamcommunity.com/sharedfiles/filedetails/?id=1157022429)\
 [[TTT] 100 More Randomats! (Pack 1/4)](https://steamcommunity.com/sharedfiles/filedetails/?id=2428342861)
 
+## New Player Greeting
+Suggested by /u/HappyHateBot on Reddit\
+See the player who's played the least blown up with a remote sticky bomb\
+\
+_trophies_greeting_ - Default: 1 - Whether this trophy is enabled\
+Requires:\
+[Remote Sticky Bomb [TTT]](https://steamcommunity.com/sharedfiles/filedetails/?id=550005969)
+
 ## Poon reversal
 See Ben harpoon Lewis\
 \
