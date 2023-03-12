@@ -176,3 +176,13 @@ Requires:\
 [Yogscast Lewis Playermodel](https://steamcommunity.com/sharedfiles/filedetails/?id=2293499171)\
 [Randomat 2.0 for Custom Roles](https://steamcommunity.com/sharedfiles/filedetails/?id=2055805086)\
 [ULX Module for Randomat 2.0](https://steamcommunity.com/sharedfiles/filedetails/?id=2096758509)
+
+### You didn't bring me a gun
+
+Die after being rezzed without picking up a weapon\
+\
+_trophies_bringgun_ - Default: 1 - Whether this trophy is enabled\
+Requires:\
+[TTT Defib](https://steamcommunity.com/sharedfiles/filedetails/?id=2076521714)\
+OR\
+[Custom Roles for TTT](https://steamcommunity.com/sharedfiles/filedetails/?id=2421039084) (Hypnotist or Paramedic role must be enabled)
