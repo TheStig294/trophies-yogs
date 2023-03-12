@@ -160,7 +160,7 @@ Requires:\
 
 ### Scoop it up with your ******* hands
 
-Suggested by /u/ram_the_socket\
+Suggested by /u/ram_the_socket on Reddit\
 Drop an item near a beggar without them ever picking it up\
 \
 _trophies_scoopitup_ - Default: 1 - Whether this trophy is enabled\
@@ -179,6 +179,7 @@ Requires:\
 
 ### You didn't bring me a gun
 
+Suggested by by /u/SNOR97 on Reddit\
 Die after being rezzed without picking up a weapon\
 \
 _trophies_bringgun_ - Default: 1 - Whether this trophy is enabled\
