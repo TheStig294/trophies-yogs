@@ -94,6 +94,14 @@ Win as a detective or traitor with an item you've bought the least\
 \
 _trophies_duncanspark_ - Default: 1 - Whether this trophy is enabled
 
+### Hold space to slow down
+
+Double-jump out of a very long fall\
+\
+_trophies_holdspace_ - Default: 1 - Whether this trophy is enabled\
+Requires:\
+Requires: [Improved Double Jump!](https://steamcommunity.com/sharedfiles/filedetails/?id=2501234496)
+
 ### Huff this
 
 Kill Ravs with a fart grenade\
