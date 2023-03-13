@@ -50,7 +50,7 @@ Through the "Somehow, Palpatine returned!" randomat, see Tom-bot win\
 _trophies_tom_ - Default: 1 - Whether this trophy is enabled\
 Requires:\
 [Detective Kermit Playermodel](https://steamcommunity.com/sharedfiles/filedetails/?id=1157022429)\
-[Randomat 2.0 for Custom Roles](https://steamcommunity.com/sharedfiles/filedetails/?id=2055805086)
+[100 More Randomats! (Pack 2/4)](https://steamcommunity.com/sharedfiles/filedetails/?id=2428350426)
 
 ### Barrel for Ped
 
@@ -176,6 +176,15 @@ _trophies_scoopitup_ - Default: 1 - Whether this trophy is enabled\
 Requires:\
 [Custom Roles for TTT](https://steamcommunity.com/sharedfiles/filedetails/?id=2421039084)
 
+### WHAT ARE THE RULES?
+
+Suggested by /u/just_library_stuff on Reddit\
+As a traitor, win a round with 6 or randomats active\
+\
+_trophies_whataretherules_ - Default: 1 - Whether this trophy is enabled\
+Requires:\
+[[TTT] 100 More Randomats! (Pack 1/4)](https://steamcommunity.com/sharedfiles/filedetails/?id=2428342861)
+
 ### Yogscast Guarantee
 
 (Hidden) See Lewis manually trigger a randomat\
@@ -183,7 +192,7 @@ Requires:\
 _trophies_adminabuse_ - Default: 1 - Whether this trophy is enabled\
 Requires:\
 [Yogscast Lewis Playermodel](https://steamcommunity.com/sharedfiles/filedetails/?id=2293499171)\
-[Randomat 2.0 for Custom Roles](https://steamcommunity.com/sharedfiles/filedetails/?id=2055805086)\
+[[TTT] 100 More Randomats! (Pack 1/4)](https://steamcommunity.com/sharedfiles/filedetails/?id=2428342861)\
 [ULX Module for Randomat 2.0](https://steamcommunity.com/sharedfiles/filedetails/?id=2096758509)
 
 ### You didn't bring me a gun
