@@ -176,6 +176,15 @@ _trophies_scoopitup_ - Default: 1 - Whether this trophy is enabled\
 Requires:\
 [Custom Roles for TTT](https://steamcommunity.com/sharedfiles/filedetails/?id=2421039084)
 
+### Ultimate nerd healing
+
+Suggested by /u/just_library_stuff on Reddit\
+As a traitor, heal 50 health from a paladin\
+\
+_trophies_nerdhealing_ - Default: 1 - Whether this trophy is enabled\
+Requires:\
+[Custom Roles for TTT](https://steamcommunity.com/sharedfiles/filedetails/?id=2421039084)
+
 ### WHAT ARE THE RULES?
 
 Suggested by /u/just_library_stuff on Reddit\
