@@ -96,6 +96,7 @@ _trophies_duncanspark_ - Default: 1 - Whether this trophy is enabled
 
 ### Hold space to slow down
 
+Suggested by /u/Quillbolt_h on Reddit\
 Double-jump out of a very long fall\
 \
 _trophies_holdspace_ - Default: 1 - Whether this trophy is enabled\
