@@ -129,6 +129,15 @@ _trophies_greeting_ - Default: 1 - Whether this trophy is enabled\
 Requires:\
 [Remote Sticky Bomb [TTT]](https://steamcommunity.com/sharedfiles/filedetails/?id=550005969)
 
+### Non-canon round
+
+Suggested by /u/UntouchedWagons on Reddit\
+Win as a traitor while detective Zylus isn't on your team\
+\
+_trophies_noncanon_ - Default: 1 - Whether this trophy is enabled\
+Requires:\
+[Detective Kermit Playermodel](https://steamcommunity.com/sharedfiles/filedetails/?id=1157022429)
+
 ### Poon reversal
 
 See Ben harpoon Lewis\
