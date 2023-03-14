@@ -121,7 +121,7 @@ function TROPHY:Trigger()
 
             -- Otherwise, mark the player as potentially able to get the trophy
             ply.TTTTrophiesDuncansParkBoughtLeast = true
-            ply:ChatPrint("[Trophy progress]\nLeast purchased item bought! Win the round as a detective/traitor to earn a trophy!")
+            self:ProgressUpdate(ply, nil, nil, "Least purchased item bought!")
         end)
     end)
 
