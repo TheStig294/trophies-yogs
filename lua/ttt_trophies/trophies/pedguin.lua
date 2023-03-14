@@ -3,6 +3,7 @@ TROPHY.id = "pedguin"
 TROPHY.title = "Barrel for Ped"
 TROPHY.desc = "Prop-kill Pedguin, or as Pedguin, get prop-killed"
 TROPHY.rarity = 3
+TROPHY.forceDesc = true
 
 function TROPHY:Trigger()
     self:AddHook("DoPlayerDeath", function(ply, attacker, dmg)
