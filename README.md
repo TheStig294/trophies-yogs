@@ -185,6 +185,13 @@ _trophies_scoopitup_ - Default: 1 - Whether this trophy is enabled\
 Requires:\
 [Custom Roles for TTT](https://steamcommunity.com/sharedfiles/filedetails/?id=2421039084)
 
+### See if you can find a boat
+
+Suggested by /u/AdditionalWeekend513 on Reddit\
+As an innocent, win while in an airboat\
+\
+_trophies_boat_ - Default: 1 - Whether this trophy is enabled
+
 ### Ultimate nerd healing
 
 Suggested by /u/just_library_stuff on Reddit\
