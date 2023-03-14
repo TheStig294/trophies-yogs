@@ -9,15 +9,14 @@ function TROPHY:Trigger()
     local isPlaying = false
 
     self:AddHook("TTTBeginRound", function()
+        isPlaying = false
+
         for _, ply in ipairs(player.GetAll()) do
             if ply:GetModel() == "models/luria/night_in_the_woods/playermodels/mae.mdl" or ply:GetModel() == "models/luria/night_in_the_woods/playermodels/mae_astral.mdl" and self:IsAlive(ply) then
                 isPlaying = true
-
-                return
+                break
             end
         end
-
-        isPlaying = false
     end)
 
     self:AddHook("TTTOrderedEquipment", function(ply, equipment, is_item)

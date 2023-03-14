@@ -1,7 +1,7 @@
 local TROPHY = {}
 TROPHY.id = "greeting"
 TROPHY.title = "New Player Greeting"
-TROPHY.desc = "See the player who's played the least blown up with a remote sticky bomb"
+TROPHY.desc = "See the player who's played the least get blown up with a Remote Sticky Bomb"
 TROPHY.rarity = 2
 
 function TROPHY:Trigger()

@@ -54,12 +54,11 @@ Requires:\
 
 ### Barrel for Ped
 
-Prop-kill Pedguin while he isn't on your team\
+Prop-kill Pedguin, or as Pedguin, get prop-killed\
 \
 _trophies_pedguin_ - Default: 1 - Whether this trophy is enabled\
 Requires:\
-[Buff Winnie the Pooh](https://steamcommunity.com/sharedfiles/filedetails/?id=2515177319)\
-[Custom Roles for TTT](https://steamcommunity.com/sharedfiles/filedetails/?id=2421039084)
+[Buff Winnie the Pooh](https://steamcommunity.com/sharedfiles/filedetails/?id=2515177319)
 
 ### Barrel justice
 
@@ -105,7 +104,7 @@ Requires: [Improved Double Jump!](https://steamcommunity.com/sharedfiles/filedet
 
 ### Huff this
 
-Kill Ravs with a fart grenade\
+Kill Ravs with a fart grenade, or as Ravs, die to one\
 \
 _trophies_ravs_ - Default: 1 - Whether this trophy is enabled\
 Requires:\
@@ -122,7 +121,7 @@ _trophies_zylusday_ - Default: 1 - Whether this trophy is enabled
 ### It's a 1-shot if it hits you twice
 
 Suggested by /u/Stuf404 on Reddit\
-Kill Zylus in 1 shot of a boomerang\
+Kill Zylus in 1 shot of a boomerang, or as Zylus, be killed in one shot\
 \
 _trophies_boomerang_ - Default: 1 - Whether this trophy is enabled\
 Requires:\
@@ -141,7 +140,7 @@ Requires:\
 ### Non-canon round
 
 Suggested by /u/UntouchedWagons on Reddit\
-Win as a traitor while detective Zylus isn't on your team\
+Win as a traitor while detective Zylus isn't on your team, as Zylus, see this happen\
 \
 _trophies_noncanon_ - Default: 1 - Whether this trophy is enabled\
 Requires:\
@@ -169,7 +168,7 @@ Requires:\
 
 ### Rubber tree survivor
 
-Survive a donconnon from Doncon\
+Survive a donconnon from Duncan or as Duncan\
 \
 _trophies_duncan_ - Default: 1 - Whether this trophy is enabled\
 Requires:\

@@ -1,7 +1,7 @@
 local TROPHY = {}
 TROPHY.id = "ravs"
 TROPHY.title = "Huff this"
-TROPHY.desc = "Kill Ravs with a fart grenade"
+TROPHY.desc = "Kill Ravs with a fart grenade, or as Ravs, die to one"
 TROPHY.rarity = 1
 
 function TROPHY:Trigger()
@@ -90,7 +90,7 @@ function TROPHY:Trigger()
 
     self:AddHook("DoPlayerDeath", function(ply, attacker, dmg)
         if IsValid(dmg:GetInflictor()) and dmg:GetInflictor().IsFartGrenade and ply:GetModel() == "models/solidsnakemgs4/solidsnakemgs4.mdl" then
-            self:Earn(attacker)
+            self:Earn({attacker, ply})
         end
     end)
 end
