@@ -111,8 +111,8 @@ function TROPHY:Trigger()
             end
 
             local plyStats = table.Copy(TTTTrophies.stats[self.id][plyID])
-            -- Don't give out this trophy until at least a sample of 100 purchases have been gathered
-            if plyStats.____TotalPurchases < 100 then return end
+            -- Don't give out this trophy until at least a sample of 500 purchases have been gathered
+            if plyStats.____TotalPurchases < 500 then return end
 
             -- If there's an item bought less than the current one, abort
             for itemName, purchaseCount in pairs(plyStats) do
@@ -130,15 +130,17 @@ function TROPHY:Trigger()
             for _, ply in ipairs(player.GetAll()) do
                 if ply.TTTTrophiesDuncansParkBoughtLeast and self:IsAlive(ply) and TTTTrophies:IsTraitorTeam(ply) then
                     self:Earn(ply)
-                    ply.TTTTrophiesDuncansParkBoughtLeast = false
                 end
+
+                ply.TTTTrophiesDuncansParkBoughtLeast = false
             end
         elseif win == WIN_INNOCENT then
             for _, ply in ipairs(player.GetAll()) do
                 if ply.TTTTrophiesDuncansParkBoughtLeast and self:IsAlive(ply) and TTTTrophies:IsGoodDetectiveLike(ply) then
                     self:Earn(ply)
-                    ply.TTTTrophiesDuncansParkBoughtLeast = false
                 end
+
+                ply.TTTTrophiesDuncansParkBoughtLeast = false
             end
         end
     end)
