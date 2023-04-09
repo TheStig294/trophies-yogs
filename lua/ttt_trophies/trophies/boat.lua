@@ -2,7 +2,7 @@ local TROPHY = {}
 TROPHY.id = "boat"
 TROPHY.title = "See if you can find a boat"
 TROPHY.desc = "As an innocent, win while in an airboat"
-TROPHY.rarity = 2
+TROPHY.rarity = 3
 
 function TROPHY:Trigger()
     self.roleMessage = ROLE_DETECTIVE
