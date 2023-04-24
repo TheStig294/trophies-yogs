@@ -8,7 +8,18 @@ local enoughRandomatsTriggered = false
 -- Work around for the TTTRandomatCommand hook only accepting added hooks before the randomat base is run (during when autorun files are being loaded)
 if SERVER then
     hook.Add("TTTRandomatTriggered", "TTTTrophiesWhatAreTheRules", function()
-        if #Randomat.ActiveEvents >= 6 then
+        local eventCount = #Randomat.ActiveEvents
+
+        if eventCount == 6 then
+            local plys = {}
+
+            for _, ply in ipairs(player.GetAll()) do
+                if TTTTrophies:IsTraitorTeam(ply) then
+                    table.insert(plys, ply)
+                end
+            end
+
+            TROPHY:ProgressUpdate(plys, eventCount, 6)
             enoughRandomatsTriggered = true
         end
     end)
