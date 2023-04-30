@@ -3,16 +3,17 @@ TROPHY.id = "zylus"
 TROPHY.title = "A vote for Zylus..."
 TROPHY.desc = "See Zylus survive a round with the democracy randomat"
 TROPHY.rarity = 3
+local democracyTriggered = false
 
-function TROPHY:Trigger()
-    local democracyTriggered = false
-
-    self:AddHook("TTTRandomatTriggered", function(id)
+if SERVER then
+    hook.Add("TTTRandomatTriggered", "TTTTrophiesZylusRandomatTrigger", function(id, owner)
         if id == "democracy" then
             democracyTriggered = true
         end
     end)
+end
 
+function TROPHY:Trigger()
     self:AddHook("TTTEndRound", function()
         if not democracyTriggered then return end
 

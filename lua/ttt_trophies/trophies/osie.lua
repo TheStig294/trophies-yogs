@@ -3,16 +3,17 @@ TROPHY.id = "osie"
 TROPHY.title = "Role inventor"
 TROPHY.desc = "Play a round with the Mud Scientist with Osie"
 TROPHY.rarity = 3
+local eventTriggered = false
 
-function TROPHY:Trigger()
-    local eventTriggered = false
-
-    self:AddHook("TTTRandomatTriggered", function(id, owner)
+if SERVER then
+    hook.Add("TTTRandomatTriggered", "TTTTrophiesOsieRandomatTrigger", function(id, owner)
         if id == "mudscientist" then
             eventTriggered = true
         end
     end)
+end
 
+function TROPHY:Trigger()
     self:AddHook("TTTPrepareRound", function()
         timer.Simple(2, function()
             if not eventTriggered then return end
