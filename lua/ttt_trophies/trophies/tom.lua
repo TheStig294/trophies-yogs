@@ -27,7 +27,7 @@ function TROPHY:Trigger()
 end
 
 function TROPHY:Condition()
-    return Randomat and Randomat.CanEventRun and Randomat:CanEventRun("palp")
+    return Randomat and Randomat.Events and Randomat.Events["palp"]
 end
 
 RegisterTTTTrophy(TROPHY)

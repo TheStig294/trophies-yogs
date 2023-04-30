@@ -30,7 +30,7 @@ function TROPHY:Trigger()
 end
 
 function TROPHY:Condition()
-    return Randomat and Randomat.CanEventRun and Randomat:CanEventRun("mudscientist") and util.IsValidModel("models/player/mokeyfix/nosacz.mdl")
+    return Randomat and Randomat.Events and Randomat.Events["mudscientist"] and util.IsValidModel("models/player/mokeyfix/nosacz.mdl")
 end
 
 RegisterTTTTrophy(TROPHY)
