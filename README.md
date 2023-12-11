@@ -201,8 +201,8 @@ As a traitor, win a round with 6 or randomats active\
 _trophies_whataretherules_ - Default: 1 - Whether this trophy is enabled\
 Requires:\
 [[TTT] 100 More Randomats! (Pack 1/4)](https://steamcommunity.com/sharedfiles/filedetails/?id=2428342861)
-
-### Yogscast Guarantee
+  
+### Admin Abuse!
 
 (Hidden) See Lewis manually trigger a randomat\
 \
