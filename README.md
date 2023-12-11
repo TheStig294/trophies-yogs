@@ -86,13 +86,6 @@ Requires:\
 [Yogscast Sharky Player Model](https://steamcommunity.com/sharedfiles/filedetails/?id=2755239782)\
 [Custom Roles for TTT](https://steamcommunity.com/sharedfiles/filedetails/?id=2421039084)
 
-### Duncan's Park Souvenir
-
-Suggested by /u/Pegussu on Reddit\
-Win as a detective or traitor with an item you've bought the least\
-\
-_trophies_duncanspark_ - Default: 1 - Whether this trophy is enabled
-
 ### Hold space to slow down
 
 Suggested by /u/Quillbolt_h on Reddit\
