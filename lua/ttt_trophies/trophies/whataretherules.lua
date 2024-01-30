@@ -1,13 +1,14 @@
 local TROPHY = {}
 TROPHY.id = "whataretherules"
 TROPHY.title = "WHAT ARE THE RULES?"
-TROPHY.desc = "As a traitor, win a round with 6 or randomats active"
+TROPHY.desc = "As a traitor, win a round with 6 or more randomats active"
 TROPHY.rarity = 3
 local enoughRandomatsTriggered = false
 
 -- Work around for the TTTRandomatCommand hook only accepting added hooks before the randomat base is run (during when autorun files are being loaded)
 if SERVER then
     hook.Add("TTTRandomatTriggered", "TTTTrophiesWhatAreTheRules", function()
+        if not TROPHY or not TROPHY.ProgressUpdate then return end
         local eventCount = #Randomat.ActiveEvents
 
         if eventCount == 6 then
