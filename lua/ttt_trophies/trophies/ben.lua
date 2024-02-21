@@ -29,7 +29,7 @@ function TROPHY:Trigger()
 end
 
 function TROPHY:Condition()
-    return util.IsValidModel("models/bradyjharty/yogscast/sharky.mdl") and ConVarExists("ttt_hypnotist_enabled") and GetConVar("ttt_hypnotist_enabled"):GetBool()
+    return util.IsValidModel("models/bradyjharty/yogscast/sharky.mdl") and TTTTrophies:CanRoleSpawn(ROLE_HYPNOTIST)
 end
 
 RegisterTTTTrophy(TROPHY)

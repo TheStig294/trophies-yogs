@@ -28,7 +28,7 @@ function TROPHY:Trigger()
 end
 
 function TROPHY:Condition()
-    return ConVarExists("ttt_paladin_enabled") and GetConVar("ttt_paladin_enabled"):GetBool()
+    return TTTTrophies:CanRoleSpawn(ROLE_PALADIN)
 end
 
 RegisterTTTTrophy(TROPHY)

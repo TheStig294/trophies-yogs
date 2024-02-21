@@ -100,7 +100,7 @@ function TROPHY:Trigger()
 end
 
 function TROPHY:Condition()
-    return ConVarExists("ttt_beggar_enabled") and GetConVar("ttt_beggar_enabled"):GetBool()
+    return TTTTrophies:CanRoleSpawn(ROLE_BEGGAR)
 end
 
 RegisterTTTTrophy(TROPHY)
