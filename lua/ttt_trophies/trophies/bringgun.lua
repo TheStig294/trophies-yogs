@@ -33,7 +33,7 @@ function TROPHY:Trigger()
 end
 
 function TROPHY:Condition()
-    return weapons.Get("weapon_vadim_defib") ~= nil or (util.CanRoleSpawn and (util.CanRoleSpawn(ROLE_HYPNOTIST) or util.CanRoleSpawn(ROLE_PARAMEDIC)))
+    return weapons.Get("weapon_vadim_defib") ~= nil or (TTTTrophies:CanRoleSpawn(ROLE_HYPNOTIST) or TTTTrophies:CanRoleSpawn(ROLE_PARAMEDIC))
 end
 
 RegisterTTTTrophy(TROPHY)
