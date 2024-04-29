@@ -30,7 +30,7 @@ function TROPHY:Trigger()
 
     self:AddHook("PlayerDroppedWeapon", function(owner, wep)
         -- If weapon isn't buyable or was dropped by a beggar, ignore it
-        if not wep.CanBuy or wep.CanBuy == {} or owner:IsBeggar() then return end
+        if not wep.CanBuy or wep.CanBuy == {} or not IsValid(owner) or owner:IsBeggar() then return end
 
         if not droppedWeapons[owner] then
             droppedWeapons[owner] = {}
