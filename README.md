@@ -222,3 +222,6 @@ Requires:\
 [TTT Defib](https://steamcommunity.com/sharedfiles/filedetails/?id=2076521714)\
 OR\
 [Custom Roles for TTT](https://steamcommunity.com/sharedfiles/filedetails/?id=2421039084) (Hypnotist or Paramedic role must be enabled)
+
+## Steam Workshop Link
+https://steamcommunity.com/sharedfiles/filedetails/?id=2902938835
